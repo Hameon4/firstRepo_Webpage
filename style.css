@@ -1,0 +1,231 @@
+* { /*Something always needed*/
+  padding: 0;
+  margin: 0;
+}
+
+header { /*Gives a background to the header part*/
+  background: #999;
+  padding: 60px;
+}
+
+header h2 { /*This and the one below this separates the title and the lists*/
+  float: left;
+  font-size: 40px;
+}
+
+.mainNav {
+  float: right;
+}
+
+.mainNav li {/*This puts all the list from downward list to row lists*/
+  float: left;
+  margin-left: 30px; /*Spacing b/w each list*/
+}
+
+.col ul { /*Removes the bullet points and any other features*/
+  list-style: none;
+}
+.mainNav li a {/*Removes underlined link in each word*/
+  text-decoration: none;
+  color: green;
+  font-size: 25px;
+  transition: 0.3s ease-in;
+
+}
+
+.mainNav li:hover a { /*Animates the boxes on the header*/
+  background: darkgrey;
+  padding: 10px;
+  border-radius: 10%;
+}
+.section01{
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 82vh;
+}
+
+.Journey p{ /*Hameon Text*/
+  color: darkgreen;
+  text-align: center;
+  font-size: 100px;
+  padding-top: 190px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+.frontendIMG{ /*This centers the image on the page*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons a button{
+  text-decoration: none;
+}
+#btnScrollUp {
+  position: fixed; /*As we scroll down the page, it's gonna float on top of all the content*/
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: green;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); /*Gotta check what this means*/
+  color: white;
+  outline: none; /*Need to look at this*/
+  cursor: pointer;
+  border: none;
+}
+
+#btnScrollUp:active { /*active sudo class*/
+  background: darkgreen;
+}
+
+/*Section2 - About ME*/
+.section03 {
+  background: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.section03 .p1{
+  color: darkgreen;
+  font-size: 60px;
+  text-align: center;
+}
+
+.section03 p{
+  color: grey;
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.myImage img {
+  margin-right: 10px;
+  opacity: 0.5;
+  border-radius: 50px;
+}
+/*Section 3 - Contact*/
+.section02 {
+  background: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.contact .p1{
+  text-align: center;
+  font-size: 60px;
+  padding-top: 30px;
+  color: darkgreen;
+}
+
+.contact .p2{
+  font-size: 50px;
+  padding-left: 10px;
+  color: grey;
+}
+
+.SocialMediaLists {
+  margin-left: 30px;
+  float: left;
+}
+
+.SocialMediaLists a{
+  font-size: 40px;
+}
+
+.SocialMediaLists li {
+  list-style: none;
+  margin: 10px 30px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 20px;
+  transition: 0.5s;
+  float: left;
+}
+
+/*Responsive Part*/
+@media only screen and (max-width: 980px) {
+
+  header { /*Gives a background to the header part*/
+    background: #999;
+    padding: 50px;
+  }
+
+  header h2 {/*My Web Development Journey*/
+    font-size: 25px;
+    text-align: center;
+    margin:-50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px
+  }
+
+  .mainNav li{
+    margin-left: 5px
+  }
+  .mainNav li a {
+    color: green;
+    font-size: 20px;
+    transition: 0.3s ease-in;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+.myImage img {
+  opacity: 0.5;
+  border-radius: 10px;
+  width: 150px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+
+.section03 p{ /*About me paragraphs*/
+  color: grey;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  }
+
+.contact .p2{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+  padding-left: 10px;
+  color: grey;
+  margin-right: 20px;
+  margin-left: 20px;
+  }
+
+.SocialMediaLists a{
+  font-size: 30px;
+  padding-left: 50px;
+  }
+
+  .Journey p{ /*Hameon Text*/
+    color: darkgreen;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 190px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+  }
+
+  .contact .p1{ /*Contact*/
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+    color: darkgreen;
+  }
+
+  .section03 .p1{ /*About Me*/
+    color: darkgreen;
+    font-size: 40px;
+    text-align: center;
+  }
+}
